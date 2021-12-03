@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="estilos4.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+	<style type="text/css">
+		input::placeholder
+		{
+				color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+	<header id="cabecera">
+		<h1><a href="admi.html">VOLVER</a></h1>
+	</header>
+	<div class="login">
+		<article class="fondo">
+			<h3>Agregar</h3>
+			<form method="post" id="formulario" action="agregar.php">
+				<b>cod_reserva</b><input class="inp" type="hidden" name="cod_reserva" placeholder="cod_reserva"required="">
+				<b>hora</b> <input class="inp" type="time" name="h" placeholder="hora" required="">
+				<b>fecha</b><input class="inp" type="date" name="f" placeholder="fecha" required="">
+                <b>ci</cite></b><input class="inp" type="text" name="ci_reserva" placeholder="ci" required="">
+				<input class="boton" type="submit" name="agregar" value="agregar">
+			</form>
+		</article>
+	</div>
+</body>
+</html>

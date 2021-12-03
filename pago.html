@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="estilos4.css">
+	<link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+	<div class="contenedor">
+	<header id="cabecera">
+		<h1><a href="admi.html">VOLVER</a></h1>
+	</header>
+	<div class="login">
+		<article class="fondo">
+			<h3>AGREGAR</h3>
+			<form method="post" id="formulario" action="pago.php">
+				<b>TRATAMIENTO</b> <input class="inp" type="text" name="tratamiento" placeholder="tratamiento"required="">
+				<b>DESCRIPCION</b> <input class="inp" type="text" name="descripcion" placeholder="descripcion"required="">
+				<b>COSTO</b> <input class="inp" type="text" name="costo" placeholder="costo"required="">
+				<b>COSTO TOTAL</b><input class="inp" type="text" name="costo_total" placeholder="costo total" required="">
+                <b>HORA</b><input class="inp" type="time" name="hora" placeholder="HORA" required="">
+                <b>FECHA</b><input class="inp" type="date" name="fecha" placeholder="FECHA" required="">
+				<b>CI</b><input class="inp" type="text" name="ci_pago" placeholder="CI" required="">
+				<input class="boton" type="submit" name="agregar" value="AGREGAR">
+			</form>
+		</article>
+	</div>
+</body>
+</html>

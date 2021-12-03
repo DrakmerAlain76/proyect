@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="estilos4.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+	<style type="text/css">
+		input::placeholder
+		{
+				color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+	<header id="cabecera">
+		<h1><a href="admi.html">VOLVER</a></h1>
+	</header>
+	<div class="login">
+		<article class="fondo">
+			<h3>Agregar</h3>
+			<form method="post" id="formulario" action="agregar.php">
+				<b>CI</b><input class="inp" type="text" name="ci" placeholder="ci"required="">
+				<b>USUARIOS</b> <input class="inp" type="text" name="nuser" placeholder="Usuario"required="" pattern="a-zA-Z+">
+				<b>CONTRASEÑA</b><input class="inp" type="password" name="pw" placeholder="password" required="" pattern="a-zA-Z+">
+				<b>NOMBRE</b><input class="inp" type="text" name="nom" placeholder="nombre" required="" pattern="a-zA-Z+">
+				<b>APELLIDO</b> <input class="inp" type="text" name="app" placeholder="apellidos" required="" pattern="a-zA-Z+">  
+				<b>EMAIL</b><input class="inp" type="email" name="email" placeholder="email"required="">
+				<SELECT class="inp" NAME='tipo'>
+ 				<OPTION VALUE='1' SELECTED>Administrador
+ 				<OPTION VALUE='2' SELECTED>Cliente
+				<input class="boton" type="submit" name="agregar" value="agregar">
+			</form>
+		</article>
+	</div>
+</body>
+</html>

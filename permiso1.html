@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="estilos4.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+	<style type="text/css">
+		input::placeholder
+		{
+				color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+	<header id="cabecera">
+		<h1><a href="admi.html">VOLVER</a></h1>
+	</header>
+	<div class="login">
+		<article class="fondo">
+			<h3>Agregar</h3>
+			<form method="post" id="formulario" action="permiso.php">
+				<b>CI</b><input class="inp" type="text" name="ci" placeholder="ci"required="">
+				<SELECT class="inp" NAME='tipo'>
+ 				<OPTION VALUE='1' SELECTED>Contrato
+ 				<OPTION VALUE='2' SELECTED>Problemas
+				<input class="boton" type="submit" name="guardar" value="guardar">
+			</form>
+		</article>
+	</div>
+</body>
+</html>
