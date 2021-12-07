@@ -4,8 +4,8 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos3.css">
+	<link rel="stylesheet" href="../estilos2.css">
+	<link rel="stylesheet" href="../estilos3.css">
 </head>
 <body>
 	<div class="contenedor">

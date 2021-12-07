@@ -1,4 +1,5 @@
 <?php
+// aqui
 include ("conexion.php");
 $id=$_REQUEST['id'];
 $nuser=$_REQUEST['usuario'];

@@ -4,6 +4,7 @@
   font-family: Josefin Sans;
 }
 .contenedor{
+  /* background-image: url(img/black3.jpg); */
   background-image: url(img/black3.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -57,6 +58,8 @@ header a:hover{
   align-items: center;
   align-content: center;
   border-radius: 5px;
+  /* padding: 8px; */
+  padding: 25px 0px 25px 0px;
 }
 .fondo img{
   margin-top: -75px;
@@ -145,4 +148,10 @@ header a:hover{
 }
 .boton:hover{
   border: 120%;
+}
+.icon-key{
+  /* ✏️; */
+}
+.icon-user{
+
 }

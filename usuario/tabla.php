@@ -1,14 +1,14 @@
 <center>
 <?php
-require("conexion.php");
+require("../bd/conexion.php");
 $sql="SELECT * FROM sesion";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos5.css">
+	<link rel="stylesheet" href="../estilos2.css">
+	<link rel="stylesheet" href="../estilos5.css">
 
 </head>
 <body>
@@ -22,11 +22,11 @@ $sql="SELECT * FROM sesion";
 				<li><a href="admi.html">inicio</a></li>
 				<li><a href="">Agregar</a>
 					<ul class="submenu">
-						<li><a href="agregare.html">Usuarios</a></li>
-						<li><a href="paciente.html">Paciente</a></li>
-						<li><a href="reserva.html">Reserva</a></li>
-						<li><a href="pago.html">Pago</a></li>
-						<li><a href="medicamento.html">Medicamento</a></li>
+						<li><a href="../administrador/agregare.html">Usuarios</a></li>
+						<li><a href="../administrador/paciente.html">Paciente</a></li>
+						<li><a href="../administrador/reserva.html">Reserva</a></li>
+						<li><a href="../administrador/pago.html">Pago</a></li>
+						<li><a href="../administrador/medicamento.html">Medicamento</a></li>
 					</ul>
 				</li>
 				<li><a href="">ver tabla</a>

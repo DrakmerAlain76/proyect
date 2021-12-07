@@ -1,5 +1,5 @@
 <?php
-	include("conexion.php");
+	include("../bd/conexion.php");
 	$ci=$_POST["ci"];
 	$nuser=$_POST["nuser"];
 	$pw=$_POST["pw"];
@@ -10,7 +10,8 @@
 	$sql="INSERT INTO sesion (ci,usuario,contrase,nombre,apellidos,email,tipo) VALUES 
 	('$ci','$nuser','$pw','$nom','$app','$email','$tipo')";
     if($con->query($sql)==TRUE){
-		header('Location: tabla.php');
+		// ? corregido la Location
+		header('Location: ../usuario/tabla.php');
 	}
 	else{
 	echo "Error".$sql."<br>".$con->error;

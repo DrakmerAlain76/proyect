@@ -1,14 +1,14 @@
 <center>
 <?php
-require("conexion.php");
+require("../../bd/conexion.php");
 $sql="SELECT * FROM medicamento";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos5.css">
+	<link rel="stylesheet" href="../../estilos2.css">
+	<link rel="stylesheet" href="../../estilos5.css">
 </head>
 <body>
 	<header id="cabecera">
@@ -17,6 +17,7 @@ $sql="SELECT * FROM medicamento";
 	<div class="contenedor">
 	<nav id="navegacion">
 			<ul class="menu">
+				<!-- revisar admi.html-->
 				<li><a href="admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
@@ -29,6 +30,7 @@ $sql="SELECT * FROM medicamento";
 				</li>
 				<li><a href="">VER TABLA</a>
 					<ul class="submenu">
+						<!-- revisar  -->
 						<li><a href="tabla.php">USUARIOS</a></li>
 						<li><a href="accion.php">INGRESO</a></li>
 						<li><a href="tablapa.php">PACIENTE</a></li>
@@ -40,6 +42,7 @@ $sql="SELECT * FROM medicamento";
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
+						<!-- revisar  -->
 						<li><a href="listar.php">USUARIO</a></li>
 						<li><a href="listarhistorial.php">HISTORIAL</a></li>
 							
@@ -52,6 +55,7 @@ $sql="SELECT * FROM medicamento";
 		</nav>
 </body>
 </html>
+<!-- revisar estilo  -->
 <link rel="stylesheet" href="estilo3.css">
 	<table border="2">
 		<thead>
@@ -76,6 +80,7 @@ while ($row=$result->fetch_assoc()) {
 <td><?php echo $row['f'];?></td>
 <td><?php echo $row['medi_ci'];?></td>
 <th><a href="eliminarmedi.php? cod_medi=<?php echo
+// ? revisar imagenes
 $row['cod_medi'];?>"><img src="imagenes/basura.jpg" width="30" height="24" ></a></td>
 <th><a href="modificarmedi.php? cod_medi=<?php echo
 $row['cod_medi'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>

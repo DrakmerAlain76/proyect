@@ -1,5 +1,5 @@
 <?php
-	include("conexion.php");
+	include("../bd/conexion.php");
 	$ci=$_POST["ci"];
 	$nombre=$_POST["nombre"];
     $apellido=$_POST["apellido"];
@@ -7,7 +7,8 @@
 	$sql="INSERT INTO paciente (ci,nombre,apellido,celular) VALUES 
 	('$ci','$nombre','$apellido','$celular')";
     if($con->query($sql)==TRUE){
-		header('Location: tablapa.php');
+		// ? corregido Location: tablapa.php
+		header('Location: ../crud/paciente/tablapa.php');
 	}
 	else{
 	echo "Error".$sql."<br>".$con->error;

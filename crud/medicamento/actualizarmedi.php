@@ -1,5 +1,5 @@
 <?php
-include ("conexion.php");
+include ("../bd/conexion.php");
 $cod_medi=$_REQUEST['cod_medi'];
 $nombre=$_REQUEST['nombre'];
 $hora=$_REQUEST['hora'];
@@ -8,7 +8,8 @@ $sql="UPDATE medicamento set cod_medi='$cod_medi',nombre='$nombre',h='$hora',f='
 $result=$con->query($sql);
 if($result)
 {
-    header('Location: tablamedi.php');
+    // ? corregido Location: tablamedi.php
+    header('Location: ../crud/medicamento/tablamedi.php');
 }
 else
 {

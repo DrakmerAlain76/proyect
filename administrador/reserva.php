@@ -1,6 +1,6 @@
 <center>
 <?php
-include"conexion.php";
+include "../bd/conexion.php";
 if($_POST){
 	$ci=$_POST['cod_reserva'];
 	$h=$_POST['hora'];
@@ -22,7 +22,7 @@ else
 	echo "Se registró correctamente";
 }
 }
-include("conexion.php");
+// include("conexion.php");
 $sql="SELECT * FROM reserva";
 ?>
 <!DOCTYPE html>
@@ -72,6 +72,7 @@ $sql="SELECT * FROM reserva";
 				</li>
 			</ul>
 		</nav>
+		<!-- cambiar la referencia de estilos  -->
 <link rel="stylesheet" href="estilo3.css">
 <table border="2">
 <thead>
@@ -95,10 +96,10 @@ while ($row=$result->fetch_assoc()) {
 	<th><?php echo $row['f'];?></th>
 	<th><?php echo $row['obs'];?></th>
 	<th><?php echo $row['me'];?></th>
-	<th><a href="eliminar.php? id=<?phpecho
-	$row['id'];?>"><img src="imagenes/basura.jpg"width="30" height="24" ></a></td>
-	<th><a href="modificar.php? id=<?php echo
-	$row['id'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>
+	<th><a href="../usuario/eliminar.php? id=<?php echo
+	$row['id'];?>"><img src="../css/img/basura.jpg"width="30" height="24" ></a></td>
+	<th><a href="../usuario/modificar.php? id=<?php echo
+	$row['id'];?>"><img src="../css/img/actualizar.png"width="30" height="24" ></a></td>
 	
 </tr>
 <?php

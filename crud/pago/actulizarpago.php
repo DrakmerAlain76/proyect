@@ -1,5 +1,5 @@
 <?php
-include ("conexion.php");
+include ("../bd/conexion.php");
 $cod_pago=$_REQUEST['cod_pago'];
 $tratamiento=$_REQUEST['tratamiento'];
 $descripcion=$_REQUEST['descripcion'];
@@ -12,7 +12,8 @@ $sql="UPDATE pago set cod_pago='$cod_pago',tratamiento='$tratamiento',descripcio
 $result=$con->query($sql);
 if($result)
 {
-    header('Location: tablapago.php');
+    // ? corregido Location: tablapago.php
+    header('Location: ../crud/pago/tablapago.php');
 }
 else
 {

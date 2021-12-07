@@ -9,8 +9,8 @@ $result=$con->query($sql);
 <html>
 <head>
 <title></title>
-	<link rel="stylesheet" href="estilos5.css">
-	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="../estilos5.css">
+	<link rel="stylesheet" href="../fonts.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 	<style type="text/css">
 		input::placeholder
