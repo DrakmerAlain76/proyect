@@ -1,6 +1,6 @@
 <?php 
-
-	$conexion=mysqli_connect('localhost','root','','proyecto');
+	require("../../bd/conexion.php");
+	// $conexion=mysqli_connect('localhost','root','','proyecto');
 
  ?>
 <center>
@@ -9,8 +9,8 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos5.css">
+	<link rel="stylesheet" href="../../estilos2.css">
+	<link rel="stylesheet" href="../../estilos5.css">
 </head>
 <body>
 	<div class="contenedor">
@@ -19,6 +19,7 @@
 	</header>
 		<nav id=navegacion>
 		<ul class="menu">
+			<!-- revisar admin -->
 				<li><a href="admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
@@ -31,6 +32,7 @@
 				</li>
 				<li><a href="">VER TABLA</a>
 					<ul class="submenu">
+						<!-- revisar  -->
 						<li><a href="tabla.php">USUARIOS</a></li>
 						<li><a href="accion.php">INGRESO</a></li>
 						<li><a href="tablapa.php">PACIENTE</a></li>
@@ -42,17 +44,20 @@
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
+						<!-- revisar  -->
 						<li><a href="listar.php">USUARIO</a></li>
 						<li><a href="listarhistorial.php">HISTORIAL</a></li>
 							
 					</ul>
 				</li>
 				<li>
+					<!-- revisar cerrar.php -->
 					<a href="cerrar.php">CERRAR SESION</a>
 				</li>
 		</nav>
 
 <br>
+<!-- revisar estilos -->
 <link rel="stylesheet" href="estilo3.css">
 <table border="2">
 		<thead>
@@ -65,9 +70,9 @@
 		</thead>
 
 		<?php 
-		$sql="SELECT * from paciente";
-		$result=mysqli_query($conexion,$sql);
-
+		$sql="SELECT * FROM paciente";
+		$result=mysqli_query($con,$sql);
+		
 		while($mostrar=mysqli_fetch_array($result)){
 		 ?>
 
@@ -76,10 +81,11 @@
 			<td><?php echo $mostrar['nombre'] ?></td>
 			<td><?php echo $mostrar['apellido'] ?></td>
 			<td><?php echo $mostrar['celular'] ?></td>
-			<th><a href="eliminarapa.php? ci=<?php echo
-			$mostrar['ci'];?>"><img src="imagenes/basura.jpg"width="30" height="24" ></a></td>
-			<th><a href="modificarpa.php? ci=<?php echo
-			$mostrar['ci'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>
+		<!-- corregido eliminarapa.php? ci && imagenes/basura.jpg && imagenes/actualizar.png && modificar-->
+			<th><a href="../crud/paciente/eliminarapa.php? ci=<?php echo
+			$mostrar['ci'];?>"><img src="img/basura.jpg"width="30" height="24" ></a></td>
+			<th><a href="../crud/paciente/modificarpa.php? ci=<?php echo
+			$mostrar['ci'];?>"><img src="img/actualizar.png"width="30" height="24" ></a></td>
 		</tr>
 	<?php 
 	}

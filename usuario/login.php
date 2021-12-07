@@ -1,7 +1,11 @@
 <?php
-include "conexion.php";
+include "../bd/conexion.php";
+// include "conexion.php";
 if($_POST)
 {
+		/**
+		 * ! trabajar con la seguridad
+		 */
 		$nuser=$_POST["nuser"];
 		$pw=$_POST["pw"];
 		$sql="SELECT * FROM sesion where usuario='$nuser' AND contrase='$pw'";
@@ -25,7 +29,7 @@ if($_POST)
 				if($result1->num_rows>0)
 				{
 //echo "Bienvenido Administrador".$_SESSION["nuser"];
-					header("location:admi.html");
+					header("location:../administrador/admi.html");
 				}
 				else
 				{

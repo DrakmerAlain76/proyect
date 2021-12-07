@@ -1,10 +1,10 @@
 <center>
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos5.css">
+	<link rel="stylesheet" href="../estilos2.css">
+	<link rel="stylesheet" href="../estilos5.css">
 </head>
 <body>
 	<div class="contenedor">
@@ -60,7 +60,7 @@
 <input type="Submit" name="btn" value="Buscar">
 </form>
 <?php
-include "conexion.php";
+include "../bd/conexion.php";
 if(isset($_POST["btn"]))
 {
 	$busca=$_POST["bus"];//Texto a buscar

@@ -1,14 +1,14 @@
 <center>
 <?php
-require("conexion.php");
+require("../../bd/conexion.php");
 $sql="SELECT * FROM pago";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="estilo2.css">
-	<link rel="stylesheet" href="estilos5.css">
+	<link rel="stylesheet" href="../../estilo2s.css">
+	<link rel="stylesheet" href="../../estilos5.css">
 <body>
 	<div class="contenedor">
 	<header id="cabecera">
@@ -16,9 +16,11 @@ $sql="SELECT * FROM pago";
 	</header>
 		<nav id=navegacion>
 		<ul class="menu">
+			<!-- revisar admin -->
 				<li><a href="admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
+						<!-- revisar  -->
 						<li><a href="agregare.html">USUARIO</a></li>
 						<li><a href="paciente.html">PACIENTE</a></li>
 						<li><a href="reserva.html">RESERVA</a></li>
@@ -28,6 +30,7 @@ $sql="SELECT * FROM pago";
 				</li>
 				<li><a href="">VER TABLA</a>
 					<ul class="submenu">
+						<!-- revisar -->
 						<li><a href="tabla.php">USUARIOS</a></li>
 						<li><a href="accion.php">INGRESO</a></li>
 						<li><a href="tablapa.php">PACIENTE</a></li>
@@ -39,12 +42,14 @@ $sql="SELECT * FROM pago";
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
+						<!-- revisar -->
 						<li><a href="listar.php">USUARIO</a></li>
 						<li><a href="listarhistorial.php">HISTORIAL</a></li>
 							
 					</ul>
 				</li>
 				<li>
+					<!-- revisar  -->
 					<a href="cerrar.php">CERRAR SESION</a>
 				</li>
 			</ul>
@@ -53,6 +58,7 @@ $sql="SELECT * FROM pago";
 </html>
 <?php  
 ?>
+<!-- estilo -->
 <link rel="stylesheet" href="estilo3.css">
 <table border="2">
 	<thead>

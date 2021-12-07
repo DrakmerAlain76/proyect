@@ -1,5 +1,5 @@
 <?php
-include ("conexion.php");
+include ("../bd/conexion.php");
 $ci=$_REQUEST['ci'];
 $nombre=$_REQUEST['nombre'];
 $apellido=$_REQUEST['apellido'];
@@ -8,7 +8,8 @@ $sql="UPDATE paciente set ci='$ci',nombre='$nombre',apellido='$apellido',celular
 $result=$con->query($sql);
 if($result)
 {
-    header('Location: tablapa.php');
+    // ? corregido Location: tablapa.php
+    header('Location: ../crud/pago/tablapa.php');
 }
 else
 {

@@ -1,4 +1,4 @@
-<?php
+<?php 
 include ("conexion.php");
 $cod_pago=$_REQUEST['cod_pago'];
 $sql="SELECT * FROM pago where cod_pago=$cod_pago";
@@ -8,8 +8,8 @@ $result=$con->query($sql);
 <html>
 <head>
 <title></title>
-	<link rel="stylesheet" href="estilos4.css">
-    <link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="../../estilos4.css">
+    <link rel="stylesheet" href="../../fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
     <style type="text/css">
 		input::placeholder
@@ -21,7 +21,8 @@ $result=$con->query($sql);
 <body>
 	<div class="contenedor">
 	<header id="cabecera">
-		<a href="admi.html">volver</a>
+		<!-- corregido admi.html -->
+		<a href="../administrador/admi.html">volver</a>
 	</header>
 	<div class="login">
 		<article class="fondo">
@@ -30,7 +31,8 @@ $result=$con->query($sql);
 	while($row=mysqli_fetch_assoc($result))
 	{
 	?>
-	<form method="post" id="formulario" action="actulizarpago.php">
+	
+	<form method="post" id="formulario" action="../crud/pago/actulizarpago.php">
 	<tr>
 			<td><input class="inp" type="hidden" name="cod_pago"value='<?php echo
 			$row['cod_pago'];?>'></td>
