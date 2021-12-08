@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("../../bd/conexion.php");
 $cod_medi = $_REQUEST['cod_medi'];
 $sql = "SELECT * FROM medicamento where cod_medi=$cod_medi";
 $result = $con->query($sql);
@@ -32,7 +32,7 @@ $result = $con->query($sql);
 				while ($row = mysqli_fetch_assoc($result)) {
 				?>
 					<!-- corregido actualizarmedi.php -->
-					<form method="post" id="formulario" action="../crud/medicamento/actualizarmedi.php">
+					<form method="post" id="formulario" action="../../crud/medicamento/actualizarmedi.php">
 						<tr>
 							<td>
 								<input class="inp" type="hidden" name="cod_medi" value='<?php echo

@@ -1,5 +1,5 @@
 <?php
-include ("../bd/conexion.php");
+include ("../../bd/conexion.php");
 $cod_pago=$_REQUEST['cod_pago'];
 $tratamiento=$_REQUEST['tratamiento'];
 $descripcion=$_REQUEST['descripcion'];
@@ -13,7 +13,7 @@ $result=$con->query($sql);
 if($result)
 {
     // ? corregido Location: tablapago.php
-    header('Location: ../crud/pago/tablapago.php');
+    header('Location: ../../crud/pago/tablapago.php');
 }
 else
 {

@@ -88,9 +88,9 @@ while ($row=$result->fetch_assoc()) {
 	<td><?php echo $row['hora'];?></td>
 	<td><?php echo $row['fecha'];?></td>
 	<td><?php echo $row['ci_pago'];?></td>
-	<th><a href="eliminarpago.php? cod_pago=<?php echo
+	<th><a href="../../crud/pago/eliminarpago.php? cod_pago=<?php echo
 	$row['cod_pago'];?>"><img src="../../css/img/basura.jpg"width="30" height="24" ></a></td>
-	<th><a href="modificarpago.php? cod_pago=<?php echo
+	<th><a href="../../crud/pago/modificarpago.php? cod_pago=<?php echo
 	$row['cod_pago'];?>"><img src="../../css/img/actualizar.png"width="30" height="24" ></a></td>
 <?php
 }

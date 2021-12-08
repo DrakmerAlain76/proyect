@@ -1,5 +1,5 @@
 <?php 
-include ("../db/conexion.php"); 
+include ("../../db/conexion.php"); 
 $cod_pago=$_REQUEST['cod_pago'];
 $sql="SELECT * FROM pago where cod_pago=$cod_pago";
 $result=$con->query($sql);

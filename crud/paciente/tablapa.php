@@ -82,9 +82,9 @@
 			<td><?php echo $mostrar['apellido'] ?></td>
 			<td><?php echo $mostrar['celular'] ?></td>
 		<!-- corregido eliminarapa.php? ci && imagenes/basura.jpg && imagenes/actualizar.png && modificar-->
-			<th><a href="../crud/paciente/eliminarapa.php? ci=<?php echo
+			<th><a href="../../crud/paciente/eliminarapa.php? ci=<?php echo
 			$mostrar['ci'];?>"><img src="../../css/img/basura.jpg"width="30" height="24" ></a></td>
-			<th><a href="../crud/paciente/modificarpa.php? ci=<?php echo
+			<th><a href="../../crud/paciente/modificarpa.php? ci=<?php echo
 			$mostrar['ci'];?>"><img src="../../css/img/actualizar.png"width="30" height="24" ></a></td>
 		</tr>
 	<?php 
