@@ -1,5 +1,6 @@
 <?php
-include "conexion.php";
+include "../bd/conexion.php";
+// ! revisar la version de PHP
 require_once('class.ezpdf.php');
 $pdf = new Cezpdf('Carta'); //seleccionamos tipo de hoja
 $pdf->selectFont('fonts/Arial.afm'); //seleccionamos fuente a utilizar

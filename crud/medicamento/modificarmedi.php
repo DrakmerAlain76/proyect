@@ -35,29 +35,24 @@ $result = $con->query($sql);
 					<form method="post" id="formulario" action="../../crud/medicamento/actualizarmedi.php">
 						<tr>
 							<td>
-								<input class="inp" type="hidden" name="cod_medi" value='<?php echo
-																						$row['cod_medi']; ?>'>
+								<input class="inp" type="hidden" name="cod_medi" value='<?php echo $row['cod_medi']; ?>'>
 							</td>
 						</tr>
 						<tr>
 						<tr>
 							<td>NOMBRE</td>
-							<td><input type="text" class="inp" name="nombre" value='<?php echo
-																					$row['nombre']; ?>'></td>
+							<td><input type="text" class="inp" name="nombre" value='<?php echo $row['nombre']; ?>'></td>
 						</tr>
 						<td>HORA</td>
-						<td><input type="time" class="inp" name="hora" value='<?php echo
-																				$row['hora']; ?>'></td>
+						<td><input type="time" class="inp" name="hora" value='<?php echo $row['hora']; ?>'></td>
 						</tr>
 						<tr>
 							<td>FECHA</td>
-							<td><input type="date" class="inp" name="fecha" value='<?php echo
-																					$row['fecha']; ?>'></td>
+							<td><input type="date" class="inp" name="fecha" value='<?php echo $row['fecha']; ?>'></td>
 						</tr>
 						<tr>
 							<td>CI</td>
-							<td><input type="hidden" class="inp" name="medi_ci" value='<?php echo
-																						$row['ci_medi']; ?>'></td>
+							<td><input type="hidden" class="inp" name="medi_ci" value='<?php echo $row['ci_medi']; ?>'></td>
 						</tr>
 						<tr>
 							<td></td>
