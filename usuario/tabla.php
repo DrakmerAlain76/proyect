@@ -7,8 +7,8 @@ $sql="SELECT * FROM sesion";
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="../estilos2.css">
-	<link rel="stylesheet" href="../estilos5.css">
+	<link rel="stylesheet" href="../css/estilos2.css">
+	<link rel="stylesheet" href="../css/estilos5.css">
 
 </head>
 <body>
@@ -19,7 +19,7 @@ $sql="SELECT * FROM sesion";
 		<nav id=navegacion>
 			<ul class="menu">
 				<ul class="menu">
-				<li><a href="admi.html">inicio</a></li>
+				<li><a href="../administrador/admi.html">inicio</a></li>
 				<li><a href="">Agregar</a>
 					<ul class="submenu">
 						<li><a href="../administrador/agregare.html">Usuarios</a></li>
@@ -60,7 +60,7 @@ $sql="SELECT * FROM sesion";
 <?php  
 echo "Mostar Tabla"."<br>";
 ?>
-<link rel="stylesheet" href="estilo3.css">
+<link rel="stylesheet" href="../css/estilo3.css">
 <table border="2">
 	<thead>
 		<td>id</td>
@@ -91,9 +91,9 @@ while ($row=$result->fetch_assoc())
 			<td><?php echo $row['email'];?></td>
 			<td><?php echo $row['tipo'];?></td>
 			<th><a href="eliminar.php? id=<?php echo
-			$row['id'];?>"><img src="imagenes/basura.jpg"width="30" height="24" ></a></td>
+			$row['id'];?>"><img src="../css/img/basura.jpg"width="30" height="24" ></a></td>
 			<th><a href="modificar.php? id=<?php echo
-			$row['id'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>
+			$row['id'];?>"><img src="../css/img/actualizar.png"width="30" height="24" ></a></td>
 <?php
 	}
 }

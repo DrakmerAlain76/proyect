@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("../db/conexion.php");
 $id=$_REQUEST['id'];
 echo "id=".$id;
 $sql="SELECT * from sesion";

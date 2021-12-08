@@ -7,8 +7,8 @@ $sql="SELECT * FROM pago";
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="../../estilo2s.css">
-	<link rel="stylesheet" href="../../estilos5.css">
+	<link rel="stylesheet" href="../../css/estilos2.css">
+	<link rel="stylesheet" href="../../css/estilos5.css">
 <body>
 	<div class="contenedor">
 	<header id="cabecera">
@@ -16,41 +16,41 @@ $sql="SELECT * FROM pago";
 	</header>
 		<nav id=navegacion>
 		<ul class="menu">
-			<!-- revisar admin -->
-				<li><a href="admi.html">PRINCIPAL</a></li>
+			<!-- corregido admin -->
+				<li><a href="../administrador/admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
-						<!-- revisar  -->
-						<li><a href="agregare.html">USUARIO</a></li>
-						<li><a href="paciente.html">PACIENTE</a></li>
+						<!-- corregido  -->
+						<li><a href="../administrador/agregare.html">USUARIO</a></li>
+						<li><a href="../crud/paciente/paciente.html">PACIENTE</a></li>
 						<li><a href="reserva.html">RESERVA</a></li>
-						<li><a href="pago.html">PAGO</a></li>
-						<li><a href="medicamento.html">MEDICAMENTO</a></li>
+						<li><a href="../crud/pago/pago.html">PAGO</a></li>
+						<li><a href="../crud/medicamento/medicamento.html">MEDICAMENTO</a></li>
 					</ul>
 				</li>
 				<li><a href="">VER TABLA</a>
 					<ul class="submenu">
 						<!-- revisar -->
-						<li><a href="tabla.php">USUARIOS</a></li>
+						<li><a href="../usuario/tabla.php">USUARIOS</a></li>
 						<li><a href="accion.php">INGRESO</a></li>
-						<li><a href="tablapa.php">PACIENTE</a></li>
+						<li><a href="../crud/paciente/tablapa.php">PACIENTE</a></li>
 						<li><a href="reserva.php">RESERVA</a></li>
-						<li><a href="tablapago.php">PAGO</a></li>
-						<li><a href="tablamedi.php">MEDICAMENTO</a></li>
+						<li><a href="../crud/pago/tablapago.php">PAGO</a></li>
+						<li><a href="../crud/medicamento/tablamedi.php">MEDICAMENTO</a></li>
 						
 					</ul>
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
 						<!-- revisar -->
-						<li><a href="listar.php">USUARIO</a></li>
-						<li><a href="listarhistorial.php">HISTORIAL</a></li>
+						<li><a href="../report/listar.php">USUARIO</a></li>
+						<li><a href="../report/listarhistorial.php">HISTORIAL</a></li>
 							
 					</ul>
 				</li>
 				<li>
 					<!-- revisar  -->
-					<a href="cerrar.php">CERRAR SESION</a>
+					<a href="../db/cerrar.php">CERRAR SESION</a>
 				</li>
 			</ul>
 		</nav>
@@ -59,7 +59,7 @@ $sql="SELECT * FROM pago";
 <?php  
 ?>
 <!-- estilo -->
-<link rel="stylesheet" href="estilo3.css">
+<link rel="stylesheet" href="../css/estilo3.css">
 <table border="2">
 	<thead>
 		<td>COD_PAGO</td>
@@ -89,9 +89,9 @@ while ($row=$result->fetch_assoc()) {
 	<td><?php echo $row['fecha'];?></td>
 	<td><?php echo $row['ci_pago'];?></td>
 	<th><a href="eliminarpago.php? cod_pago=<?php echo
-	$row['cod_pago'];?>"><img src="imagenes/basura.jpg"width="30" height="24" ></a></td>
+	$row['cod_pago'];?>"><img src="../../css/img/basura.jpg"width="30" height="24" ></a></td>
 	<th><a href="modificarpago.php? cod_pago=<?php echo
-	$row['cod_pago'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>
+	$row['cod_pago'];?>"><img src="../../css/img/actualizar.png"width="30" height="24" ></a></td>
 <?php
 }
 }

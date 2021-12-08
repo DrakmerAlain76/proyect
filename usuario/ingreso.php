@@ -4,8 +4,8 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="../estilos2.css">
-	<link rel="stylesheet" href="../estilos3.css">
+	<link rel="stylesheet" href="../css/estilos2.css">
+	<link rel="stylesheet" href="../css/estilos3.css">
 </head>
 <body>
 	<div class="contenedor">
@@ -14,7 +14,7 @@
 	</header>
 	<nav id="navegacion">
 			<ul class="menu">
-				<li><a href="admi.html">PRINCIPAL</a></li>
+				<li><a href="../administrador/admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
 						<li><a href="agregare.html">USUARIO</a></li>
@@ -37,24 +37,23 @@
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
-						<li><a href="listar.php">USUARIO</a></li>
-						<li><a href="listarhistorial.php">HISTORIAL</a></li>
+						<li><a href="../report/listar.php">USUARIO</a></li>
+						<li><a href="../report/listarhistorial.php">HISTORIAL</a></li>
 							
 					</ul>
 				</li>
 				<li>
-					<a href="cerrar.php">CERRAR SESION</a>
+					<a href="../db/cerrar.php">CERRAR SESION</a>
 				</li>
 			</ul>
 		</nav>
 </body>
 </html>
 <?php
-echo "Mostar Tabla"."<br>";
-require("conexion.php");
+require("../db/conexion.php");
 $sql="SELECT * FROM accesos";
 ?>
-<link rel="stylesheet" href="estilo3.css">
+<link rel="stylesheet" href="../css/estilo3.css">
 <br>
 	<table border="2">
 		<thead>

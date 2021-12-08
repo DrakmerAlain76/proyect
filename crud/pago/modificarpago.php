@@ -1,5 +1,5 @@
 <?php 
-include ("conexion.php");
+include ("../db/conexion.php"); 
 $cod_pago=$_REQUEST['cod_pago'];
 $sql="SELECT * FROM pago where cod_pago=$cod_pago";
 $result=$con->query($sql);
@@ -8,8 +8,8 @@ $result=$con->query($sql);
 <html>
 <head>
 <title></title>
-	<link rel="stylesheet" href="../../estilos4.css">
-    <link rel="stylesheet" href="../../fonts.css">
+	<link rel="stylesheet" href="../../css/estilos4.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
     <style type="text/css">
 		input::placeholder

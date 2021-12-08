@@ -1,6 +1,6 @@
 
 <?php
-include ("conexion.php");
+include ("../db/conexion.php");
 $id=$_REQUEST['id'];
 $sql="SELECT * FROM sesion where id='$id'";
 $result=$con->query($sql);
@@ -9,8 +9,8 @@ $result=$con->query($sql);
 <html>
 <head>
 <title></title>
-	<link rel="stylesheet" href="../estilos5.css">
-	<link rel="stylesheet" href="../fonts.css">
+	<link rel="stylesheet" href="../css/estilos5.css">
+	<link rel="stylesheet" href="../css/fonts.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
 	<style type="text/css">
 		input::placeholder
@@ -23,7 +23,7 @@ $result=$con->query($sql);
 <body>
 	<div class="contenedor">
 	<header id="cabecera">
-		<h1><a href="admi.html">VOLVER</a></h1>
+		<h1><a href="../administrador/admi.html">VOLVER</a></h1>
 	</header>
 	<div class="login">
 		<article class="fondo">

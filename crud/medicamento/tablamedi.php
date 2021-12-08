@@ -7,8 +7,8 @@ $sql="SELECT * FROM medicamento";
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="../../estilos2.css">
-	<link rel="stylesheet" href="../../estilos5.css">
+	<link rel="stylesheet" href="../../css/estilos2.css">
+	<link rel="stylesheet" href="../../css/estilos5.css">
 </head>
 <body>
 	<header id="cabecera">
@@ -17,46 +17,46 @@ $sql="SELECT * FROM medicamento";
 	<div class="contenedor">
 	<nav id="navegacion">
 			<ul class="menu">
-				<!-- revisar admi.html-->
-				<li><a href="admi.html">PRINCIPAL</a></li>
+				<!-- corregido admi.html-->
+				<li><a href="../admistrador/admi.html">PRINCIPAL</a></li>
 				<li><a href="">AGREGAR</a>
 					<ul class="submenu">
-						<li><a href="agregare.html">USUARIO</a></li>
-						<li><a href="paciente.html">PACIENTE</a></li>
-						<li><a href="reserva.html">RESERVA</a></li>
-						<li><a href="pago.html">PAGO</a></li>
-						<li><a href="medicamento.html">MEDICAMENTO</a></li>
+						<li><a href="../administrador/sagregare.html">USUARIO</a></li>
+						<li><a href="../administrador/paciente.html">PACIENTE</a></li>
+						<li><a href="../administrador/reserva.html">RESERVA</a></li>
+						<li><a href="../administrador/pago.html">PAGO</a></li>
+						<li><a href="../administrador/medicamento.html">MEDICAMENTO</a></li>
 					</ul>
 				</li>
 				<li><a href="">VER TABLA</a>
 					<ul class="submenu">
-						<!-- revisar  -->
-						<li><a href="tabla.php">USUARIOS</a></li>
+						<!-- corregido  -->
+						<li><a href="../usuario/tabla.php">USUARIOS</a></li>
 						<li><a href="accion.php">INGRESO</a></li>
-						<li><a href="tablapa.php">PACIENTE</a></li>
+						<li><a href="../crud/paciente/tablapa.php">PACIENTE</a></li>
 						<li><a href="reserva.php">RESERVA</a></li>
-						<li><a href="tablapago.php">PAGO</a></li>
-						<li><a href="medicamento.php">MEDICAMENTO</a></li>
+						<li><a href="../crud/pago/tablapago.php">PAGO</a></li>
+						<li><a href="../crud/medicamento.php">MEDICAMENTO</a></li>
 						
 					</ul>
 				</li>
 				<li><a href="">BUSCAR</a>
 					<ul class="submenu">
-						<!-- revisar  -->
-						<li><a href="listar.php">USUARIO</a></li>
-						<li><a href="listarhistorial.php">HISTORIAL</a></li>
+						<!-- corregido  -->
+						<li><a href="../report/listar.php">USUARIO</a></li>
+						<li><a href="../report/listarhistorial.php">HISTORIAL</a></li>
 							
 					</ul>
 				</li>
 				<li>
-					<a href="cerrar.php">CERRAR SESION</a>
+					<a href="../db/cerrar.php">CERRAR SESION</a>
 				</li>
 			</ul>
 		</nav>
 </body>
 </html>
-<!-- revisar estilo  -->
-<link rel="stylesheet" href="estilo3.css">
+<!-- corregido estilo  -->
+<link rel="stylesheet" href="../css/estilo3.css">
 	<table border="2">
 		<thead>
 			<td>COD</td>
@@ -80,10 +80,10 @@ while ($row=$result->fetch_assoc()) {
 <td><?php echo $row['f'];?></td>
 <td><?php echo $row['medi_ci'];?></td>
 <th><a href="eliminarmedi.php? cod_medi=<?php echo
-// ? revisar imagenes
-$row['cod_medi'];?>"><img src="imagenes/basura.jpg" width="30" height="24" ></a></td>
+// corregido imagenes
+$row['cod_medi'];?>"><img src="../../css/img/basura.jpg" width="30" height="24" ></a></td>
 <th><a href="modificarmedi.php? cod_medi=<?php echo
-$row['cod_medi'];?>"><img src="imagenes/actualizar.png"width="30" height="24" ></a></td>
+$row['cod_medi'];?>"><img src="../../css/img/actualizar.png"width="30" height="24" ></a></td>
 <?php
 }
 }
