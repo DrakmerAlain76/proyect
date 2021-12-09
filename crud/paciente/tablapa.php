@@ -1,100 +1,263 @@
 <?php
 require("../../bd/conexion.php");
-// $conexion=mysqli_connect('localhost','root','','proyecto');
-
 ?>
-<center>
+<!doctype html>
+<html lang="es">
 
-	<!DOCTYPE html>
-	<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Menu de administrador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Inline validation is very easy to implement using the Architect Framework.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+<link href="../../css/plantilla/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/tabla.css">
+</head>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <!-- colocar el logo -->
+                <h1>AINABRA</h1>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
 
-	<head>
-		<title></title>
-		<!-- <link rel="stylesheet" href="../../css/estilos2.css"> -->
-		<!-- <link rel="stylesheet" href="../../css/estilos5.css"> -->
-		<link rel="stylesheet" href="../../css/tabla.css">
-	</head>
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Buscar">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                           </div>
+                
+            </div>
+        </div>       
+        
+        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
 
-	<body>
-		<div class="contenedor">
-			<header id="cabecera">
-				<h1>AINABRA</h1>
-			</header>
-			<!-- <nav id=navegacion>
-				<ul class="menu">
-				
-					<li><a href="../administrador/admi.html">PRINCIPAL</a></li>
-					<li><a href="">AGREGAR</a>
-						<ul class="submenu">
-							<li><a href="../administrador/agregare.html">USUARIO</a></li>
-							<li><a href="../administrador/paciente.html">PACIENTE</a></li>
-							<li><a href="../administrador/reserva.html">RESERVA</a></li>
-							<li><a href="../administrador/pago.html">PAGO</a></li>
-							<li><a href="../administrador/medicamento.html">MEDICAMENTO</a></li>
-						</ul>
-					</li>
-					<li><a href="">VER TABLA</a>
-						<ul class="submenu">
-				
-							<li><a href="../usuario/tabla.php">USUARIOS</a></li>
-							<li><a href="accion.php">INGRESO</a></li>
-							<li><a href="../crud/paciente/tablapa.php">PACIENTE</a></li>
-							<li><a href="reserva.php">RESERVA</a></li>
-							<li><a href="../crud/pago/tablapago.php">PAGO</a></li>
-							<li><a href="../crud/medicamento/tablamedi.php">MEDICAMENTO</a></li>
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="app-sidebar__heading">REGISTRAR</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-note2"></i>
+                                        REGISTRAR
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../administrador/agregare.html">
+                                                <i class="metismenu-icon pe-7s-note2"></i>
+                                                USUARIO
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="../administrador/paciente.html">
+                                                <i class="metismenu-icon pe-7s-note2"></i>
+                                                PACIENTE</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="../administrador/reserva.html">
+                                                <i class="metismenu-icon pe-7s-note2"></i>
+                                                RESERVA</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="../administrador/pago.html">
+                                                <i class="metismenu-icon pe-7s-note2"></i>
+                                                PAGO</a>
+                                        </li>
+                                        <li>
+                                            
+                                            <a href="../administrador/medicamento.html">
+                                                <i class="metismenu-icon pe-7s-note2"></i>
+                                                MEDICAMENTO</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- --------------------------------------------------------------------------------- -->
+                                
+                            <li class="app-sidebar__heading">VER DATOS</li>
 
-						</ul>
-					</li>
-					<li><a href="">BUSCAR</a>
-						<ul class="submenu">
-				
-							<li><a href="../report/listar.php">USUARIO</a></li>
-							<li><a href="../report/listarhistorial.php">HISTORIAL</a></li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-note2"></i>
+                                    VER DATOS
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="../usuario/tabla.php">
+                                        
+                                        <i class="metismenu-icon pe-7s-note2"></i>
+                                            USUARIOS</a>
+                                    </li>
+                                    <li>
+                                        <a href="../crud/paciente/tablapa.php">
+                                        
+                                        <i class="metismenu-icon pe-7s-note2"></i>
+                                            PACIENTE</a>
+                                    </li>
+                                    <li>
+                                        <a href="reserva.php">
+                                        
+                                        <i class="metismenu-icon pe-7s-note2"></i>
+                                            RESERVA</a>
+                                    </li>
+                                    <li>
+                                        <a href="../crud/pago/tablapago.php">
+                                        
+                                        <i class="metismenu-icon pe-7s-note2"></i>
+                                            PAGO</a>
+                                    </li>
+                                    <li>
+                                        <a href="../crud/medicamento/tablamedi.php">
+                                       
+                                       <i class="metismenu-icon pe-7s-note2"></i>
+                                            MEDICAMENTO</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="app-sidebar__heading">BUSCAR</li>
+                            <li>
+                                <a href="../report/listar.php">
+                                    <i class="metismenu-icon pe-7s-note2"></i>
+                                    USUARIO
+                                </a>
+                            </li>
+						    <li>
+                                <a href="../report/listarhistorial.php">
+                                    <i class="metismenu-icon pe-7s-note2"></i>
+                                    HISTORIAL
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <a href="">volver</a>
+                        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <div class="contenedor">
+							<header id="cabecera">
+								<h1>AINABRA</h1>
+							</header>
 
-						</ul>
-					</li>
-					<li>
-				
-						<a href="../../bd/cerrar.php">CERRAR SESION</a>
-					</li>
-			</nav> -->
+							<br>
 
-			<br>
-			<!-- corregido estilos -->
-			<div class="datagrid">
-				<table>
-					<thead>
-						<th>CI</th>
-						<th>NOMBRE</th>
-						<th>APELLIDO</th>
-						<th>CELULAR</th>
-						<th>ELIMINAR</th>
-						<th>MODIFICAR</th>
-					</thead>
+							<div class="datagrid">
+								<table>
+									<thead>
+										<th>CI</th>
+										<th>NOMBRE</th>
+										<th>APELLIDO</th>
+										<th>CELULAR</th>
+										<th>ELIMINAR</th>
+										<th>MODIFICAR</th>
+									</thead>
 
-					<?php
-					$sql = "SELECT * FROM paciente";
-					$result = mysqli_query($con, $sql);
+									<?php
+									$sql = "SELECT * FROM paciente";
+									$result = mysqli_query($con, $sql);
 
-					while ($mostrar = mysqli_fetch_array($result)) {
-					?>
-						<tbody>	
-							<tr>
-								<td><?php echo $mostrar['ci'] ?></td>
-								<td><?php echo $mostrar['nombre'] ?></td>
-								<td><?php echo $mostrar['apellido'] ?></td>
-								<td><?php echo $mostrar['celular'] ?></td>
-								<!-- corregido eliminarapa.php? ci && imagenes/basura.jpg && imagenes/actualizar.png && modificar-->
-								<td><a href="../../crud/paciente/eliminarapa.php? ci=<?php echo $mostrar['ci']; ?>"><img src="../../css/img/basura.jpg" width="30" height="24"></a></td>
-								<td><a href="../../crud/paciente/modificarpa.php? ci=<?php echo $mostrar['ci']; ?>"><img src="../../css/img/actualizar.png" width="30" height="24"></a></td>
-							</tr>
-						</tbody>
-					<?php
-					}
-					?>
-				</table>
-			</div>
-	</body>
-
-	</html>
-</center>
+									while ($mostrar = mysqli_fetch_array($result)) {
+									?>
+										<tbody>	
+											<tr>
+												<td><?php echo $mostrar['ci'] ?></td>
+												<td><?php echo $mostrar['nombre'] ?></td>
+												<td><?php echo $mostrar['apellido'] ?></td>
+												<td><?php echo $mostrar['celular'] ?></td>
+												<!-- corregido eliminarapa.php? ci && imagenes/basura.jpg && imagenes/actualizar.png && modificar-->
+												<td><a href="../../crud/paciente/eliminarapa.php? ci=<?php echo $mostrar['ci']; ?>"><img src="../../css/img/basura.jpg" width="30" height="24"></a></td>
+												<td><a href="../../crud/paciente/modificarpa.php? ci=<?php echo $mostrar['ci']; ?>"><img src="../../css/img/actualizar.png" width="30" height="24"></a></td>
+											</tr>
+										</tbody>
+									<?php
+									}
+									?>
+								</table>
+							</div>
+						<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                    </div>
+                        <div class="main-card mb-3 card">
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- pie de pagina -->
+                    
+                </div>
+        </div>
+    </div>
+<script type="text/javascript" src="../../css/plantilla/assets/scripts/main.js"></script></body>
+</html>
