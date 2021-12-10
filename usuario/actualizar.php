@@ -1,6 +1,6 @@
 <?php
 // aqui
-include ("../db/conexion.php");
+include ("../bd/conexion.php");
 $id=$_REQUEST['id'];
 $nuser=$_REQUEST['usuario'];
 $pw=$_REQUEST['contrase'];

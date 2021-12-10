@@ -1,5 +1,5 @@
 <?php
-include("../db/conexion.php");
+include("../bd/conexion.php");
 $id=$_REQUEST['id'];
 echo "id=".$id;
 $sql="SELECT * from sesion";
@@ -8,7 +8,7 @@ if($reg=mysqli_fetch_array($result))
 	{
 		$sql1=("DELETE FROM sesion where id='$id'");
 		$result=$con->query($sql1);
-		header('Location: tabla.php');
+		header('Location: ../usuario/tabla.php');
 
 	}
 else

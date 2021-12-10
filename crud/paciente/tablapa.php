@@ -111,7 +111,7 @@ require("../../bd/conexion.php");
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="../administrador/agregare.html">
+                                            <a href="../../administrador/agregare.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 USUARIO
                                             </a>
@@ -119,25 +119,25 @@ require("../../bd/conexion.php");
                                         
                                         <li>
                                             
-                                            <a href="../administrador/paciente.html">
+                                            <a href="../../administrador/paciente.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 PACIENTE</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/reserva.html">
+                                            <a href="../../administrador/reserva.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 RESERVA</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/pago.html">
+                                            <a href="../../administrador/pago.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 PAGO</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/medicamento.html">
+                                            <a href="../../administrador/medicamento.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 MEDICAMENTO</a>
                                         </li>
@@ -205,7 +205,7 @@ require("../../bd/conexion.php");
                 </div>    
                 <div class="app-main__outer">
                     <div class="app-main__inner">
-                        <a href="">volver</a>
+                        <a href="../../crud/administrador/admi.html">VOLVER</a>
                         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                         <div class="contenedor">
 							<header id="cabecera">

@@ -1,6 +1,6 @@
 
 <?php
-include ("../db/conexion.php");
+include ("../bd/conexion.php");
 $id=$_REQUEST['id'];
 $sql="SELECT * FROM sesion where id='$id'";
 $result=$con->query($sql);

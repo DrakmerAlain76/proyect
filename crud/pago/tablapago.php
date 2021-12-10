@@ -113,7 +113,7 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="../administrador/agregare.html">
+                                            <a href="../../administrador/agregare.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 USUARIO
                                             </a>
@@ -121,25 +121,25 @@
                                         
                                         <li>
                                             
-                                            <a href="../administrador/paciente.html">
+                                            <a href="../../administrador/paciente.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 PACIENTE</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/reserva.html">
+                                            <a href="../../administrador/reserva.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 RESERVA</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/pago.html">
+                                            <a href="../../administrador/pago.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 PAGO</a>
                                         </li>
                                         <li>
                                             
-                                            <a href="../administrador/medicamento.html">
+                                            <a href="../../administrador/medicamento.html">
                                                 <i class="metismenu-icon pe-7s-note2"></i>
                                                 MEDICAMENTO</a>
                                         </li>
@@ -190,13 +190,13 @@
                             </li>
                             <li class="app-sidebar__heading">BUSCAR</li>
                             <li>
-                                <a href="../report/listar.php">
+                                <a href="../../report/listar.php">
                                     <i class="metismenu-icon pe-7s-note2"></i>
                                     USUARIO
                                 </a>
                             </li>
 						    <li>
-                                <a href="../report/listarhistorial.php">
+                                <a href="../../report/listarhistorial.php">
                                     <i class="metismenu-icon pe-7s-note2"></i>
                                     HISTORIAL
                                 </a>

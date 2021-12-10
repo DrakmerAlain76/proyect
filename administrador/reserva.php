@@ -6,9 +6,11 @@
 		$f = $_POST['fecha'];
 		$me = $_POST['mensaje'];
 		$ci = $_POST['ci'];
-
+//para revisar mensaje
 		$sql = "SELECT * FROM reserva WHERE h='$h' and f='$f' and obs='Ocupado'";
-		$res = $con->query($sql);
+        var_dump($sql);
+        die();
+		// $res = $con->query($sql);
 		$obs = "Ocupado";
 		if ($res->num_rows > 0) {
 			echo "El Horario está Ocupado";
